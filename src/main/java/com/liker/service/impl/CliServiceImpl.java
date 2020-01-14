@@ -51,6 +51,5 @@ public class CliServiceImpl implements CliService {
         siteConfig.setEndPage(endPage);
         likeService.like();
         System.out.println("Закончил работу");
-        System.exit(0);
     }
 }
