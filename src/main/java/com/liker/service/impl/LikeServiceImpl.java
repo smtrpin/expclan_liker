@@ -48,10 +48,12 @@ public class LikeServiceImpl implements LikeService {
                     clickLike(driver);
                 }
             } else {
+                driver.quit();
                 System.out.println("StormWall protection");
                 System.exit(0);
             }
         }
+        driver.quit();
     }
 
     private void clickLike(WebDriver driver) {
